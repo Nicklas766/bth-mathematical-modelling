@@ -1,0 +1,81 @@
+{% include 'header.html' %}
+<div class="container">
+<h2>1. Hitta en tidsserie som ni vill använda för uppgiften och plotta tidsserien.</h2>
+<table>
+  <tr>
+    <th>x = antal minuter</th>
+    <th>y = antal personer i kö</th>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>15</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>45</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>55</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>60</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>40</td>
+  </tr>
+</table>
+
+
+<h2>Krav, 2, 3, 4</h2>
+
+<img style="width:100%" src="static/img/timeseries_derivative.png"/>
+
+<p> OBS att "glidande medelvärdena" har samma punkter på det gröna sträcket </p>
+
+<h2>5. Reflektera över och beskriv vad derivatan för den tidsserie ni valt betyder. Vad är för- och nackdelarna med att använda “genomsnittsfiltret”?</h2>
+
+<h3> Om tidserien </h3>
+<p>Tidserien respresenterar en kö. Tidserien hjälper oss se hur snabbt kön minskar/ökar och
+hur många som är i kö.</p>
+
+<h3> Om derivatan </h3>
+<p>Vanligtvis så brukar centrala differenskvoten ge den bästa derivatan, däremot i
+detta fall så verkar det som att bakåt ger den bästa derivatan.</p>
+
+<p>Detta kan vi se om vi tittar på punkten (1, 20) så ser vi att den ökar med 20/minut då
+det innan var (0, 0), detta visar även den orangea linjens punkter.</p>
+
+<h3>För- och nackdelarna med att använda “genomsnittsfiltret” </h3>
+<p>Fördelar:</p>
+<ul>
+    <li> SMA (Simple Moving Average) är en enkel formel att använda för att räkna medelvärdet under en viss tid </li>
+    <li> SMA (Simple Moving Average) ger en stabil linje (kan undvika onödiga upp och ner vid t.ex aktiekurs) </li>
+    <li> SMA (Simple Moving Average) är bra för långa tidsramar </li>
+</ul>
+
+<p>Nackdelar:</p>
+<ul>
+    <li> SMA (Simple Moving Average) svaghet är snabba ändringar (om man vill kunna se dessa) </li>
+</ul>
+
+</div>
+{% include 'footer.html' %}

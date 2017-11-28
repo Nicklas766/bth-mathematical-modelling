@@ -29,7 +29,10 @@ def about():
     """ About route """
     return render_template("about.html", person=PERSON_OBJECT)
 
-
+@APP.route("/uppgift1")
+def uppgift1():
+    """ uppgift1 route """
+    return render_template("uppgift1.html")
 
 if __name__ == "__main__":
     APP.run()

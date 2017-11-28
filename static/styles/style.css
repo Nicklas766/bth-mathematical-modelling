@@ -40,4 +40,21 @@ html, body {
     width:50%;
     margin:2% auto 0;
     min-height:500px;
+    padding: 15px;
 }
+
+table, td, th {
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 5px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
