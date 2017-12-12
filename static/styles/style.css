@@ -24,7 +24,7 @@ html, body {
 
 .header a {
     height: 100%;
-    width: 120px;
+    margin: 0 5%;
     line-height:50px;
     display: inline-block;
     color:white;

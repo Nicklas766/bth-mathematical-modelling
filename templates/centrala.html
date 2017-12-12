@@ -1,0 +1,100 @@
+{% include 'header.html' %}
+<div class="container">
+    <h1>Centrala gränsvärdessatsen</h1>
+
+    <h2> Lite information </h2>
+    <p> Min mejl: Nicklas766@live.se </p>
+    <p>Exemplet är påhittat</p>
+
+    <h2> Krav 1,2 </h2>
+
+    <p>Här ser vi en populationsfördelning, den visar hur mycket man tjänar efter skatt om man har studerat webbprogrammering.</p>
+
+    <table>
+        <tr>
+            <th>x</th>
+            <td>10 000 kr</td>
+            <td>20 000 kr</td>
+            <td>30 000 kr</td>
+            <td>40 000 kr</td>
+            <td>50 000 kr</td>
+        </tr>
+        <tr>
+            <th>p(x)</th>
+            <td>0,05</td>
+            <td>0,2</td>
+            <td>0,4</td>
+            <td>0,3</td>
+            <td>0,05</td>
+        </tr>
+    </table>
+
+    <p> Vi bestämmer att N = 10, då N är 10 så tar vi 10 stickprovsvärden i varje stickprov. Vi gör många (10000) slumpmässiga dragningar från vår fördelning: </p>
+
+    <table>
+        <tr>
+            <th>Prov</th>
+            <th>Värden</th>
+            <th>Medelvärde</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>[24843, 26157, 44386, 42472, 35502, 23793, 31275, 45987, 15070, 28456]</td>
+            <td>31794.1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>[35314, 28114, 21996, 32207, 44605, 43378, 49500, 36206, 40079, 28914]</td>
+            <td>36031.3</td>
+        </tr>
+        <tr>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>[44896, 49033, 29634, 47057, 14617, 24381, 11857, 48836, 26440, 39458]</td>
+            <td>33620.9</td>
+        </tr>
+        <tr>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+        </tr>
+        <tr>
+            <td>500</td>
+            <td>[36268, 11655, 24037, 41163, 11701, 41919, 19841, 13596, 39781, 47016]</td>
+            <td>28697.7</td>
+        </tr>
+        <tr>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+        </tr>
+        <tr>
+            <td>5000</td>
+            <td>[35839, 28503, 19291, 49849, 23946, 23126, 19380, 26188, 46998, 36717]</td>
+            <td>30983.7</td>
+        </tr>
+        <tr>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+        </tr>
+        <tr>
+            <td>10000</td>
+            <td>[40817, 12631, 29742, 35596, 24618, 39613, 12415, 35713, 19377, 14019]</td>
+            <td>26454.1</td>
+        </tr>
+    </table>
+
+
+    <h2> Krav 3 </h2>
+    <p>Vi ser att vi approximativt fått en normalfördelning i vårt histogram:</p>
+
+    <img style="width:100%" src="static/img/centrala.png" />
+
+</div>
+
+{% include 'footer.html' %}
